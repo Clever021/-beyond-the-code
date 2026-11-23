@@ -1,0 +1,22 @@
+{
+  "name": "01-creative-showcase",
+  "version": "1.0.0",
+  "description": "Beyond the Code — vitrine experimental de desenvolvimento frontend (Vite, GSAP, Lenis)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  },
+  "private": true
+}

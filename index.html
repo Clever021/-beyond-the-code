@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#050B08" />
+  <title>Creative Web Showcase — Beyond the Code</title>
+  <meta name="description" content="Beyond the Code: experiências digitais além do convencional. Vitrine criativa de direção de arte, tipografia cinética, storytelling e campanhas conceito. Conteúdo 100% demonstrativo." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#hero" aria-label="Creative Showcase — início"><span class="dot"></span>CWS<small>/ beyond</small></a>
+    <nav class="nav__links" id="menu" aria-label="Seções">
+      <a href="#hero" data-nav>01 Abertura</a>
+      <a href="#story" data-nav>02 Narrativa</a>
+      <a href="#campaigns" data-nav>03 Campanhas</a>
+      <a href="#studio" data-nav>04 Laboratório</a>
+      <a href="#components" data-nav>05 Componentes</a>
+      <a href="#finale" data-nav>06 Final</a>
+    </nav>
+    <div class="nav__tools">
+      <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 01 HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero__lit" aria-hidden="true"></div>
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-hero="fade"><span class="tag">Vitrine demonstrativa</span><span>Direção de arte · código · movimento</span></p>
+          <h1 id="hero-title" class="hero__title" aria-label="Beyond the code — experiências digitais além do convencional">
+            <span class="line" aria-hidden="true"><span class="line__in">Beyond</span></span>
+            <span class="line line--mid" aria-hidden="true"><span class="line__in"><span class="outline">the</span></span><span class="hero__cap" data-hero="fade">Experiências digitais<br />além do convencional.</span></span>
+            <span class="line" aria-hidden="true"><span class="line__in"><span class="grad">code</span></span><span class="caret" aria-hidden="true"></span></span>
+          </h1>
+          <p class="hero__lead" data-hero="fade">Interfaces que combinam engenharia e direção de arte: tipografia viva, luz que reage ao cursor e narrativas guiadas pelo scroll. Tudo aqui é conceito demonstrativo.</p>
+          <div class="hero__cta" data-hero="fade">
+            <a class="btn btn--primary" href="#story" id="cta-explore">Começar a jornada <span aria-hidden="true">↓</span></a>
+            <a class="btn btn--ghost" href="#campaigns">Ver campanhas <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <div class="art__layer art__plane" data-depth="-24"></div>
+          <svg class="art__layer art__rings" viewBox="0 0 400 400" data-depth="26">
+            <g fill="none" stroke="currentColor">
+              <circle cx="200" cy="200" r="190" stroke-width="1" opacity=".5" />
+              <circle cx="200" cy="200" r="150" stroke-width="1" stroke-dasharray="2 8" opacity=".7" />
+              <circle cx="200" cy="200" r="110" stroke-width="1.5" />
+              <path d="M200 6v22M200 372v22M6 200h22M372 200h22" stroke-width="1.5" />
+            </g>
+          </svg>
+          <div class="art__layer art__core" data-depth="54"></div>
+          <div class="art__layer art__card" data-depth="90">
+            <div class="win__bar"><i></i><i></i><i></i><span class="mono">exemplo.ui</span></div>
+            <strong>Aa</strong>
+            <div class="win__lines"><i></i><i></i><i></i></div>
+          </div>
+          <svg class="art__badge" viewBox="0 0 200 200" data-depth="-14">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" /></defs>
+            <text><textPath href="#circ" startOffset="0">BEYOND · THE · CODE · BEYOND · THE · CODE · BEYOND ·</textPath></text>
+          </svg>
+        </div>
+      </div>
+      <div class="hero__foot mono" data-hero="fade"><span>Role para entrar</span><span class="scrollline"></span><span>6 seções · 3 campanhas conceito</span></div>
+    </section>
+
+    <!-- APRESENTAÇÃO + CAPACIDADES (parte da Abertura no menu) -->
+    <section class="intro" id="intro" data-nav="hero" aria-labelledby="intro-title">
+      <div class="intro__top" data-reveal>
+        <p class="kicker mono">Sobre o projeto</p>
+        <h2 id="intro-title" class="intro__lead">Criação de interfaces digitais que <span class="grad">combinam design, movimento e interatividade.</span></h2>
+        <div class="intro__body">
+          <p>Beyond the Code é um <strong>projeto experimental de desenvolvimento frontend</strong>, feito para demonstrar diferentes possibilidades visuais e técnicas: tipografia cinética, narrativa guiada pelo scroll, campanhas interativas e componentes acessíveis.</p>
+          <p class="intro__side mono">Experimental · Frontend · Conteúdo 100% fictício</p>
+        </div>
+      </div>
+
+      <div class="skills">
+        <h3 class="skills__title mono" data-reveal>Capacidades demonstradas</h3>
+        <ol class="skills__list">
+          <li class="skill skill--lead" data-reveal>
+            <span class="skill__n mono">01</span>
+            <div class="skill__main"><h4>Desenvolvimento frontend</h4><p>HTML semântico, CSS com tokens e JavaScript modular, sem framework. Vite como ferramenta de build.</p></div>
+            <p class="skill__proof mono">Vite · ES modules · CSS custom properties</p>
+            <a class="skill__go" href="#components" aria-label="Ver em Componentes">Ver <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__n mono">02</span>
+            <div class="skill__main"><h4>Interfaces responsivas</h4><p>Layouts que se reorganizam do desktop ao celular, com navegação por menu e sem rolagem horizontal.</p></div>
+            <p class="skill__proof mono">Conferido em 1440 px e 375 px</p>
+            <a class="skill__go" href="#campaigns" aria-label="Ver em Campanhas">Ver <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="skill skill--lead" data-reveal>
+            <span class="skill__n mono">03</span>
+            <div class="skill__main"><h4>Motion design com GSAP</h4><p>Timelines, tipografia animada por letra e transformação de composição entre campanhas.</p></div>
+            <p class="skill__proof mono">GSAP · SplitText · Flip · matchMedia</p>
+            <a class="skill__go" href="#campaigns" aria-label="Ver em Campanhas">Ver <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__n mono">04</span>
+            <div class="skill__main"><h4>Interatividade com JavaScript</h4><p>Seletor de campanhas, carrossel, abas, modal e controles do estúdio, operáveis por teclado.</p></div>
+            <p class="skill__proof mono">WAI-ARIA · foco · eventos</p>
+            <a class="skill__go" href="#components" aria-label="Ver em Componentes">Ver <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="skill skill--lead" data-reveal>
+            <span class="skill__n mono">05</span>
+            <div class="skill__main"><h4>Scroll storytelling</h4><p>Uma cena fixa em quatro capítulos em que a rolagem controla escala, profundidade e opacidade.</p></div>
+            <p class="skill__proof mono">ScrollTrigger · pin · Lenis</p>
+            <a class="skill__go" href="#story" aria-label="Ver em Narrativa">Ver <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="skill" data-reveal>
+            <span class="skill__n mono">06</span>
+            <div class="skill__main"><h4>Experiências visuais e CSS 3D</h4><p>Cena em profundidade, fonte variável e iluminação que acompanha o cursor, feitas só com CSS e JavaScript.</p></div>
+            <p class="skill__proof mono">preserve-3d · @property · fonte variável</p>
+            <a class="skill__go" href="#studio" aria-label="Ver em Laboratório">Ver <span aria-hidden="true">→</span></a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 02 NARRATIVA (scroll storytelling) -->
+    <section class="story" id="story" aria-labelledby="story-title">
+      <div class="story__pin">
+        <header class="story__head">
+          <p class="kicker mono">02 — Narrativa</p>
+          <h2 id="story-title">Do código<br /><span class="grad">à experiência.</span></h2>
+        </header>
+
+        <div class="story__scene" aria-hidden="true">
+          <div class="stack">
+            <div class="layer l1"><span class="mono">01 · Estrutura</span><i class="l1__grid"></i></div>
+            <div class="layer l2"><span class="mono">02 · Sistema</span><div class="l2__ui"><i></i><i></i><i></i><b></b></div></div>
+            <div class="layer l3"><span class="mono">03 · Movimento</span><svg viewBox="0 0 200 100" class="l3__curve"><path d="M0 80 C 40 80, 50 20, 100 40 S 160 90, 200 20" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="100" cy="40" r="5" fill="currentColor" /></svg></div>
+            <div class="layer l4"><span class="mono">04 · Experiência</span><strong>Aa</strong></div>
+          </div>
+        </div>
+
+        <ol class="story__caps">
+          <li class="cap"><span class="mono">01 / 04 — Estrutura</span><h3>Tudo começa na grade.</h3><p>Antes da cor, há ritmo e proporção: colunas, espaçamentos e uma hierarquia que guia o olhar.</p></li>
+          <li class="cap"><span class="mono">02 / 04 — Sistema</span><h3>Camadas com função.</h3><p>Tokens, componentes e estados: cada camada tem um papel e pode evoluir sem quebrar o conjunto.</p></li>
+          <li class="cap"><span class="mono">03 / 04 — Movimento</span><h3>O movimento explica.</h3><p>Escala, profundidade e atraso mostram relações. Animação é linguagem, não enfeite.</p></li>
+          <li class="cap"><span class="mono">04 / 04 — Experiência</span><h3>Tudo converge.</h3><p>Estrutura, sistema e movimento se encontram numa interface que o visitante sente, não só vê.</p></li>
+        </ol>
+        <div class="story__progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- 03 CAMPANHAS -->
+    <section class="section" id="campaigns" aria-labelledby="camp-title">
+      <header class="section__head" data-reveal>
+        <p class="kicker mono">03 — Campanhas conceito</p>
+        <h2 id="camp-title">Uma ideia.<br /><span class="grad">Três campanhas.</span></h2>
+        <p class="section__note">Conceitos fictícios, criados só para demonstrar direção de arte. Nomes, produtos e textos são inventados: não há marcas, avaliações ou resultados reais. Escolha uma campanha e veja a composição se transformar: layout, tipografia e imagem mudam, não apenas a cor.</p>
+      </header>
+
+      <div class="camp" id="camp" data-campaign="tech" data-reveal>
+        <div class="camp__picker" role="radiogroup" aria-label="Escolha uma campanha conceito">
+          <button class="pick" type="button" role="radio" aria-checked="true" data-pick="tech"><span class="mono">A · Tecnologia</span><strong>Pulse Stack</strong><small>Plataforma de dados (conceito)</small></button>
+          <button class="pick" type="button" role="radio" aria-checked="false" data-pick="fashion" tabindex="-1"><span class="mono">B · Moda futurista</span><strong>Atelier 2090</strong><small>Coleção (conceito)</small></button>
+          <button class="pick" type="button" role="radio" aria-checked="false" data-pick="product" tabindex="-1"><span class="mono">C · Produto premium</span><strong>Obsidiana One</strong><small>Dispositivo (conceito)</small></button>
+        </div>
+
+        <div class="camp__stage" id="stage" role="group" aria-label="Palco da campanha selecionada">
+          <p class="sr" id="c-status" role="status"></p>
+          <span class="camp__flag mono">Conceito fictício · não é uma marca real</span>
+          <div class="camp__art" aria-hidden="true"><i class="s s1"></i><i class="s s2"></i><i class="s s3"></i><i class="s s4"></i><i class="s s5"></i><i class="s s6"></i></div>
+          <div class="camp__copy" id="c-copy">
+            <p class="mono camp__kick" id="c-kick"></p>
+            <h3 class="camp__title" id="c-title"></h3>
+            <p class="camp__sub" id="c-sub"></p>
+            <button class="btn btn--stage" type="button" id="c-cta">Ver conceito <span aria-hidden="true">→</span></button>
+          </div>
+          <ul class="camp__meta" id="c-meta" aria-label="Ficha do conceito">
+            <li><span class="mono">Formato</span><b id="m-format"></b></li>
+            <li><span class="mono">Tom</span><b id="m-tone"></b></li>
+            <li><span class="mono">Movimento</span><b id="m-motion"></b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 LABORATÓRIO: estúdio -->
+    <section class="section section--alt" id="studio" aria-labelledby="studio-title">
+      <header class="section__head" data-reveal>
+        <p class="kicker mono">04 — Laboratório · Composição</p>
+        <h2 id="studio-title">Tipografia, luz<br /><span class="grad">e composição.</span></h2>
+        <p class="section__note">Mova o cursor para iluminar o texto e ajuste peso, espaçamento, luz e layout. O mesmo material de design usado nas campanhas, exposto como instrumento.</p>
+      </header>
+
+      <div class="studio" data-reveal>
+        <div class="spec" id="spec" data-layout="center" role="img" aria-label="Palco de composição tipográfica com a frase Luz e forma; mova o cursor para iluminar">
+          <div class="spec__layer spec__base">
+            <span class="mono spec__tag">exemplo · especimen</span>
+            <p class="spec__word">Luz &amp;<br />forma</p>
+            <span class="spec__orb"></span>
+            <span class="mono spec__meta">Aa — Bricolage Grotesque</span>
+          </div>
+        </div>
+
+        <div class="panel-ctl">
+          <fieldset class="ctl">
+            <legend class="mono">Composição</legend>
+            <div class="seg" role="radiogroup" aria-label="Layout do palco">
+              <button type="button" role="radio" aria-checked="true" data-layout="center">Centro</button>
+              <button type="button" role="radio" aria-checked="false" data-layout="asym">Assimétrica</button>
+              <button type="button" role="radio" aria-checked="false" data-layout="edge">Rente</button>
+            </div>
+          </fieldset>
+          <label class="range"><span>Peso <output id="o-wght">800</output></span><input type="range" id="r-wght" min="200" max="800" step="10" value="800" /></label>
+          <label class="range"><span>Espaçamento <output id="o-track">-4</output>%</span><input type="range" id="r-track" min="-8" max="8" step="1" value="-4" /></label>
+          <label class="range"><span>Luz <output id="o-light">50</output>%</span><input type="range" id="r-light" min="10" max="100" step="1" value="50" /></label>
+        </div>
+      </div>
+
+      <div class="micro" data-reveal>
+        <p class="mono lab__label">Microinterações</p>
+        <div class="micro__row">
+          <button class="btn btn--primary ripple" type="button" id="ripple">Toque para ondular</button>
+          <button class="hold" type="button" id="hold"><span class="hold__fill" aria-hidden="true"></span><span class="hold__txt">Segure para confirmar</span></button>
+          <button class="btn btn--ghost lightbtn" type="button" id="lightbtn">Luz no botão</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 LABORATÓRIO: motion -->
+    <section class="section" id="motion" data-nav="studio" aria-labelledby="motion-title">
+      <header class="section__head" data-reveal>
+        <p class="kicker mono">04 — Laboratório · Movimento</p>
+        <h2 id="motion-title">Movimento com <span class="grad">propósito.</span></h2>
+        <p class="section__note">Tudo aqui respeita <code>prefers-reduced-motion</code>: com a preferência ativa, o conteúdo aparece estático.</p>
+      </header>
+
+      <div class="marquee" aria-hidden="true"><div class="marquee__track"><span>REVEAL ✦ PARALLAX ✦ TEXTO ✦ HOVER ✦ SCROLL ✦ </span><span>REVEAL ✦ PARALLAX ✦ TEXTO ✦ HOVER ✦ SCROLL ✦ </span></div></div>
+
+      <div class="lab">
+        <div class="lab__cell lab__parallax" data-reveal>
+          <p class="mono lab__label">A · Parallax em camadas</p>
+          <div class="para" aria-hidden="true">
+            <div class="para__l" data-speed="-60"><span class="sun"></span></div>
+            <div class="para__l" data-speed="-30"><span class="hill hill--1"></span></div>
+            <div class="para__l" data-speed="10"><span class="hill hill--2"></span></div>
+            <div class="para__l" data-speed="50"><span class="hill hill--3"></span></div>
+          </div>
+        </div>
+
+        <div class="lab__cell lab__text" data-reveal>
+          <p class="mono lab__label">B · Animações de texto</p>
+          <p class="wordscrub" id="wordscrub">Cada palavra acende conforme você rola a página, guiando o olhar sem pedir atenção demais.</p>
+          <h3 class="chars" id="chars" aria-label="Letra por letra">Letra por letra</h3>
+          <button class="btn btn--ghost" type="button" id="replay">Repetir animação ↻</button>
+        </div>
+
+        <div class="lab__cell lab__hover" data-reveal>
+          <p class="mono lab__label">C · Hover e transições (toque/foque também)</p>
+          <div class="tiles">
+            <a class="tile tile--wipe" href="#motion"><span>Wipe</span></a>
+            <a class="tile tile--magnet" href="#motion" id="magnet"><span>Magnético</span></a>
+            <a class="tile tile--flip" href="#motion"><span class="f">Frente</span><span class="b">Verso</span></a>
+            <a class="tile tile--line" href="#motion"><span>Linha</span></a>
+          </div>
+        </div>
+
+        <div class="lab__cell lab__reveal" data-reveal>
+          <p class="mono lab__label">D · Scroll reveal escalonado</p>
+          <ul class="stagger" aria-label="Lista com entrada escalonada">
+            <li>Fade + deslocamento</li><li>Máscara de linha</li><li>Escala suave</li><li>Atraso em cascata</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 COMPONENTES -->
+    <section class="section section--alt" id="components" aria-labelledby="comp-title">
+      <header class="section__head" data-reveal>
+        <p class="kicker mono">05 — Componentes interativos</p>
+        <h2 id="comp-title">Peças que <span class="grad">respondem.</span></h2>
+        <p class="section__note">Carrossel, modal, abas, controles e um cartão 3D guiado pelo cursor — todos acessíveis por teclado.</p>
+      </header>
+
+      <div class="comps">
+        <div class="comp comp--carousel" data-reveal>
+          <p class="mono lab__label">Carrossel · setas, pontos, teclado e arraste</p>
+          <div class="carousel" id="carousel" role="region" aria-roledescription="carrossel" aria-label="Exemplos de slides" tabindex="0">
+            <div class="carousel__viewport"><div class="carousel__track">
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="1 de 3"><span class="mono">Exemplo 01</span><h3>Camadas e profundidade</h3><p>Sombras, blur e sobreposição criam hierarquia sem peso.</p></div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 3"><span class="mono">Exemplo 02</span><h3>Tipografia como imagem</h3><p>Escala extrema e contorno transformam texto em composição.</p></div>
+              <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 3"><span class="mono">Exemplo 03</span><h3>Cor como sistema</h3><p>Tokens reutilizáveis mantêm tudo coerente em qualquer tela.</p></div>
+            </div></div>
+            <div class="carousel__ctrl">
+              <button type="button" class="icon-btn" id="prev" aria-label="Slide anterior">←</button>
+              <div class="dots" id="dots" role="group" aria-label="Escolher slide"></div>
+              <button type="button" class="icon-btn" id="next" aria-label="Próximo slide">→</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="comp comp--tilt" data-reveal>
+          <p class="mono lab__label">Cartão 3D · mova o cursor</p>
+          <div class="tilt-stage"><div class="tilt" id="tilt" tabindex="0" aria-label="Cartão 3D de demonstração">
+            <div class="tilt__glare" aria-hidden="true"></div>
+            <span class="mono tilt__tag">exemplo · card 3D</span>
+            <strong class="tilt__title">Profundidade<br />real</strong>
+            <span class="tilt__chip" aria-hidden="true">3D</span>
+          </div></div>
+          <div class="controls">
+            <label class="range"><span>Intensidade <output id="tilt-out">14</output>°</span><input type="range" id="tilt-range" min="4" max="28" value="14" /></label>
+            <button class="switch" type="button" role="switch" aria-checked="true" id="glare-switch"><span class="switch__knob"></span><span>Brilho</span></button>
+          </div>
+        </div>
+
+        <div class="comp comp--tabs" data-reveal>
+          <p class="mono lab__label">Abas · modal · alertas</p>
+          <div class="tabs" role="tablist" aria-label="Recursos">
+            <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="true">Acessível</button>
+            <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Leve</button>
+            <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Modular</button>
+          </div>
+          <div class="panel" role="tabpanel" id="panel-1" aria-labelledby="tab-1"><p>HTML semântico, foco visível, navegação por teclado e respeito a <code>prefers-reduced-motion</code>.</p></div>
+          <div class="panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden><p>Só transform e opacity nas animações, e poucas dependências: GSAP e Lenis.</p></div>
+          <div class="panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden><p>Tokens em CSS e módulos JS pequenos por recurso: fácil de reaproveitar.</p></div>
+          <div class="row-btns">
+            <button class="btn btn--primary" type="button" id="open-modal">Abrir modal</button>
+            <button class="btn btn--ghost" type="button" id="toast-btn">Mostrar aviso</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 FINAL -->
+    <section class="finale" id="finale" aria-labelledby="finale-title">
+      <header class="section__head" data-reveal>
+        <p class="kicker mono">06 — Encerramento · Estudo de caso</p>
+        <h2 id="finale-title">Como foi <span class="grad">construído.</span></h2>
+        <p class="section__note">Resumo técnico baseado no código e nos testes feitos durante o desenvolvimento. Não há métricas comerciais: este é um projeto experimental.</p>
+      </header>
+
+      <div class="case" data-reveal>
+        <div class="case__row">
+          <h3 class="case__label mono">Objetivo</h3>
+          <p class="case__text">Reunir, em uma só página, técnicas de frontend que costumam ser vistas isoladas (tipografia cinética, scroll storytelling, transformação de layout e componentes acessíveis) e mantê-las coerentes sob uma única identidade visual.</p>
+        </div>
+        <div class="case__row">
+          <h3 class="case__label mono">Tecnologias</h3>
+          <ul class="chips" aria-label="Tecnologias utilizadas">
+            <li>HTML · CSS · JavaScript</li><li>Vite 8</li><li>GSAP 3.15</li><li>ScrollTrigger</li><li>SplitText</li><li>Flip</li><li>Lenis 1.3</li><li>CSS 3D</li><li>Fonte variável</li><li>WAI-ARIA</li>
+          </ul>
+        </div>
+        <div class="case__row">
+          <h3 class="case__label mono">Funcionalidades</h3>
+          <ul class="case__list">
+            <li>Abertura com peso de fonte reagindo ao cursor.</li>
+            <li>Narrativa fixa em 4 capítulos controlada pela rolagem.</li>
+            <li>3 campanhas conceito cuja composição se transforma ao escolher.</li>
+            <li>Estúdio de composição, microinterações e laboratório de movimento.</li>
+            <li>Carrossel, abas, modal, aviso e cartão 3D, com teclado.</li>
+          </ul>
+        </div>
+        <div class="case__row">
+          <h3 class="case__label mono">Desafios e soluções</h3>
+          <dl class="pairs">
+            <div><dt>Âncora da narrativa pinada caía no fim do pin.</dt><dd>A âncora usa o início do pin e o menu tem gatilho próprio.</dd></div>
+            <div><dt>A rotação em CSS era anulada pelo Flip (<code>rotate: none</code> inline).</dt><dd>Cor e rotação foram para um pseudo-elemento, controlado por variável.</dd></div>
+            <div><dt>Texto em contorno mostrava linhas internas na fonte variável.</dt><dd><code>paint-order: stroke fill</code> com preenchimento na cor do fundo.</dd></div>
+            <div><dt>Tipografia cinética tremia ao mudar o peso.</dt><dd>Largura fixa por letra, ~40 fps e pausa fora da tela.</dd></div>
+            <div><dt>Transformar a campanha sem tremer o texto.</dt><dd>Flip só nas formas; o texto sai e entra com SplitText.</dd></div>
+          </dl>
+        </div>
+        <div class="case__row">
+          <h3 class="case__label mono">Limitações e pendências</h3>
+          <ul class="case__list case__list--warn">
+            <li>Movimento reduzido testado só por simulação; falta testar a preferência real do sistema.</li>
+            <li>Sem teste em toque físico, leitor de tela ou medição de desempenho em hardware modesto.</li>
+            <li>Sem fotografias: as imagens são composições em CSS e SVG.</li>
+            <li>Fontes via Google Fonts; offline usa fonte alternativa.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="closing" data-reveal>
+        <p class="closing__big">Beyond<br /><span class="outline">the</span> <span class="grad">code.</span></p>
+        <p class="closing__lead">Direção de arte, engenharia e movimento no mesmo projeto: um experimento de frontend aberto a avaliação.</p>
+        <div class="closing__cta">
+          <a class="btn btn--primary" href="#hero">Voltar ao início ↑</a>
+          <a class="btn btn--ghost" href="#campaigns">Rever campanhas →</a>
+        </div>
+      </div>
+
+      <aside class="author" aria-labelledby="author-title" data-reveal>
+        <div class="author__id">
+          <h3 id="author-title" class="mono">Autoria</h3>
+          <p class="author__role">Desenvolvedor Web em Formação</p>
+          <p class="author__hint mono">Identificação provisória</p>
+          <!-- Integração futura: quando houver URLs reais, inserir aqui os links (GitHub, contato) -->
+          <p class="author__hint mono">GitHub e contato: a definir</p>
+        </div>
+        <ul class="author__split">
+          <li><b>Direção criativa</b><span>Humana: briefing, identidade visual, escolhas de cada versão e aprovação.</span></li>
+          <li><b>Implementação assistida</b><span>Código escrito com assistência de IA (Claude), seguindo a direção criativa.</span></li>
+          <li><b>Validação</b><span>Testes no navegador e build executados durante o desenvolvimento, com revisão e aprovação humanas.</span></li>
+        </ul>
+        <p class="mono closing__note">Desenvolvido com assistência de IA. Todo o conteúdo é demonstrativo: não há clientes, depoimentos ou resultados reais.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer mono"><span>© Beyond the Code — projeto experimental de frontend · Desenvolvedor Web em Formação</span><span>Vite · GSAP · Lenis · CSS 3D</span></footer>
+
+  <dialog class="modal" id="modal" aria-labelledby="modal-title">
+    <form method="dialog" class="modal__box">
+      <p class="mono modal__kicker" id="modal-kicker">Exemplo</p>
+      <h3 id="modal-title">Modal de demonstração</h3>
+      <p id="modal-text">Este modal abre e fecha por botão, tecla Esc ou clique fora. O foco volta ao elemento que o abriu.</p>
+      <div class="row-btns"><button class="btn btn--primary" value="ok" autofocus>Entendi</button><button class="btn btn--ghost" value="close">Fechar</button></div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
